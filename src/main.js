@@ -3,6 +3,8 @@ import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.js'
 
+import { CustomButton } from './components/custom-button.component.js'
+
 document.querySelector('#app').innerHTML = `
   <div>
     <a href="https://vite.dev" target="_blank">
@@ -20,5 +22,7 @@ document.querySelector('#app').innerHTML = `
     </p>
   </div>
 `
+
+document.querySelector(".card").appendChild(CustomButton());
 
 setupCounter(document.querySelector('#counter'))
